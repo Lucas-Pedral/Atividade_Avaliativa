@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int main(){
     float temperatura[7];
     float soma = 0;
