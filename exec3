@@ -1,0 +1,29 @@
+int main(){
+    float temperatura[7];
+    float soma = 0;
+    float media;
+    int i;
+    int seguras = 0, foraFaixa = 0;
+
+    for( i = 0; i < 7; i++){
+    printf("Digite a temperatura ");
+    scanf("%f", &temperatura[i]);
+    
+    if (temperatura[i] >= 20 && temperatura[i] <= 30){
+        seguras ++;
+    }
+    
+    else{
+        foraFaixa ++;
+    }
+    
+    soma += temperatura[i];
+        media = soma / 7;
+}
+
+printf("A quantidade das temperaturas seguras foi %d", seguras);
+printf("\nA quantidade de temperaturas fora da faixa foi %d", foraFaixa);
+printf("\nA média das temperaturas foi de %.2f", media);
+
+return 0;
+}
