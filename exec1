@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+    float notas[8];
+    float frequencia;
+    float maiorNota = 0;
+    int aprovados = 0, reprovados = 0;
+    int i;
+    
+    for(i = 0; i < 8; i++){
+    printf("Digite a nota ");
+    scanf("%f", &notas[i]);
+    
+    printf("Digite a frequencia do participante ");
+    scanf ("%f", &frequencia);
+    
+    if (notas[i] >= 7 && frequencia >= 75){
+        aprovados++;
+    }
+    
+    else{
+        reprovados++;
+    }
+    
+     if(notas[i] > maiorNota){
+            maiorNota = notas[i];
+        }
+}
+    
+    
+    printf("Os aprovados foram %d", aprovados);
+    printf("\nOs reprovados foram %d", reprovados);
+    printf("\nA maior nota foi %.2f", maiorNota);
+    
+    
+    return 0;
+}
