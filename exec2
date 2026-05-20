@@ -1,0 +1,34 @@
+int main(){
+    
+    float vendas[10];
+    float totalVendido;
+    int destaque = 0, comum = 0;
+    int vendaEspecial;
+    int i;
+    
+    for( i = 0; i < 10; i++){
+    printf("Digite o valor da venda ");
+    scanf("%f", &vendas[i]);
+    
+    printf("A venda foi especial 1 se sim e 0 se não ");
+    scanf("%d", &vendaEspecial);
+    
+    if (vendas[i] >= 100 || vendaEspecial == 1){
+    
+        destaque ++;
+    }
+    
+    else{
+        comum ++;
+    }
+}
+
+totalVendido = vendas[0] + vendas[1] + vendas[2] + vendas[3] + vendas[4] + vendas[5] + vendas[6] + vendas[7] + vendas[8] + vendas[9];
+
+printf("O total vendido foi %.2f", totalVendido);
+printf("\nA quantidade de vendas com destaque foi %d", destaque);
+printf("\nA quantidade de vendas comum %d", comum);
+
+
+return 0;
+}
